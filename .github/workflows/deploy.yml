@@ -49,7 +49,7 @@ jobs:
           script: |
             docker stop front-end-clients || true
             docker rm front-end-clients || true
-            docker pull ${{ secrets.DOCKER_USERNAME }}/front-end-clients
+            docker pull ${{ secrets.DOCKER_USERNAME }}/front-end-clients:latest
             docker run -d --rm --name front-end-clients -p 8080:8080 ${{ secrets.DOCKER_USERNAME }}/front-end-clients
             docker cp apiClients/frontEnd/.env front-end-clients:/home/node/app
 
