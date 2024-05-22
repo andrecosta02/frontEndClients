@@ -51,5 +51,5 @@ jobs:
             docker rm front-end-clients || true
             docker pull ${{ secrets.DOCKER_USERNAME }}/front-end-clients:latest
             docker run -d --rm --name front-end-clients -p 3000:3000 ${{ secrets.DOCKER_USERNAME }}/front-end-clients:latest
-            docker cp apiClients/frontEnd/.env front-end-clients:/home/node/app
+            docker cp apiClients/frontEnd/.env front-end-clients:/app
 
