@@ -6,7 +6,6 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import Container from 'react-bootstrap/Container';
 import * as apiService from '../services/apiService';
 
-
 function ClientEditModal({ client, show, onHide, fetchData }) {
     const [id, setId] = useState('');
     const [nome, setNome] = useState('');
