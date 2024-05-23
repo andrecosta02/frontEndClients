@@ -4,23 +4,17 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import Button from 'react-bootstrap/Button';
 import { postFunction } from "../services/apiService";
 import Container from 'react-bootstrap/Container';
-import * as ClientList from './clientList'
 
 function ClientForm() {
-    // const [nome, setNome] = useState('');
-    // const [email, setEmail] = useState('');
-    // const [endereco, setEndereco] = useState('');
-    // const [cpf, setCpf] = useState('');
-    const [nome, setNome] = useState('André Victor');
-    const [email, setEmail] = useState('andrevgcosta02@gmail.com');
-    const [endereco, setEndereco] = useState('Rua André Temudo 135');
-    const [cpf, setCpf] = useState('143121484');
+    const [nome, setNome] = useState('You Username');
+    const [email, setEmail] = useState('username@example.com');
+    const [endereco, setEndereco] = useState('Street 001');
+    const [cpf, setCpf] = useState('123456789');
 
     async function btnPostFunctionClick(event) {
         event.preventDefault();
 
         await postFunction(nome, email, endereco, cpf)
-        // ClientList.fetchData();
     }
 
     return (
