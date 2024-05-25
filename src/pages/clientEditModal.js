@@ -91,3 +91,4 @@ function ClientEditModal({ client, show, onHide, fetchData }) {
 }
 
 export default ClientEditModal;
+
