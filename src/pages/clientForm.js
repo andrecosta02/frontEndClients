@@ -6,10 +6,10 @@ import { postFunction } from "../services/apiService";
 import Container from 'react-bootstrap/Container';
 
 function ClientForm() {
-    const [nome, setNome] = useState('You Username');
-    const [email, setEmail] = useState('username@example.com');
-    const [endereco, setEndereco] = useState('Street 001');
-    const [cpf, setCpf] = useState('123456789');
+    const [nome, setNome] = useState('');
+    const [email, setEmail] = useState('');
+    const [endereco, setEndereco] = useState('');
+    const [cpf, setCpf] = useState('');
 
     async function btnPostFunctionClick(event) {
         event.preventDefault();
